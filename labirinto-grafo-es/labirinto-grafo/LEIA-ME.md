@@ -100,9 +100,10 @@ Contém:
 | `MainMenu.tscn` | Tela inicial |
 | `Main.tscn` | Cena principal |
 | `Player.gd` | Movimento, vida e interações |
-| `Enemy.gd` | DFS, BFS, perseguição e respawn |
+| `Enemy.gd` | BFS e respawn |
 | `GraphManager.gd` | Grafo e conexões |
-| `Waypoints/` | Marcadores do mapa |
+| `DFS/` | Lógica de dfs para o inimigo |
+| `Waypoint/` | Marcadores do mapa |
 
 ---
 
