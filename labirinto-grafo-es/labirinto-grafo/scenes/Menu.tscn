@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwto21tej6y00"]
+
+[ext_resource type="Script" uid="uid://34qtk52pk4c4" path="res://scripts/menu.gd" id="1_xdvgc"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+script = ExtResource("1_xdvgc")
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.026
+anchor_top = 0.046000004
+anchor_right = -0.026
+anchor_bottom = 0.046000004
+offset_left = 553.952
+offset_top = 401.192
+offset_right = 660.952
+offset_bottom = 467.192
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_direction = 2
+layout_mode = 2
+text = "Iniciar"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_direction = 2
+layout_mode = 2
+text = "Sair"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 237.0
+offset_right = 669.0
+offset_bottom = 286.0
+theme_override_font_sizes/font_size = 35
+text = "PathFinder"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
